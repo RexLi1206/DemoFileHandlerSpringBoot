@@ -43,7 +43,7 @@ public class MainRestController
     	storageService.store(file);
     	metaService.saveMeta(metaService.buildMeta(file, user, desc, uploadTime));
     	
-    	return ResponseEntity.ok().body("You successfully uploaded " + file.getOriginalFilename() + "!");
+    	return ResponseEntity.ok().body("Hey" + ((user == null)?"":" " + user) + ", you successfully uploaded " + file.getOriginalFilename() + "!");
     }
     
     @GetMapping("/files/all")

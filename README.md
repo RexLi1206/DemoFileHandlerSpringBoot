@@ -3,7 +3,7 @@
 API document: 
 
 Please start Spring boot application first. 
-root: localhost：8080
+visit root: localhost:8080. 
 Tested on Postman. 
 
 Requirements: 

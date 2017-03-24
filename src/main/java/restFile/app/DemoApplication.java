@@ -7,6 +7,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
+import it.ozimov.springboot.mail.configuration.EnableEmailTools;
 import restFile.app.config.StorageProperties;
 import restFile.app.storage.service.StorageService;
 
@@ -15,6 +16,7 @@ import restFile.app.storage.service.StorageService;
 @SpringBootApplication
 @EnableConfigurationProperties(StorageProperties.class)
 @EnableScheduling
+@EnableEmailTools
 public class DemoApplication 
 {
 

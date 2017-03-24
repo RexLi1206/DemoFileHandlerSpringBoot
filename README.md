@@ -39,5 +39,5 @@ return 404 and empty message if criteria is not correctly formatted.
 
 5. Write a scheduler in the same app to poll for new items in the last hour and send an email (Optional)
 
-Wrote a scheduler to poll the new incoming items in the last hour and trigger it every 30 sec. 
-Didn't finish with the email function, but left the space for it. 
+Wrote a scheduler to poll the new incoming items in the last hour and send them as json to my email address and trigger it every 30 sec. 
+ 

@@ -54,7 +54,7 @@ public class FileUploadIntegrationTests
 
         assertThat(response.getStatusCode()).isEqualByComparingTo(HttpStatus.OK);
         //assertThat(response.getHeaders().getLocation().toString()).startsWith("http://localhost:" + this.port + "/upload");
-        assertThat(response.getBody().toString()).isEqualTo("You successfully uploaded testupload.txt!");
+        assertThat(response.getBody().toString()).isEqualTo("Hey, you successfully uploaded testupload.txt!");
         then(storageService).should().store(any(MultipartFile.class));
     }
 
